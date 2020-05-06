@@ -1,0 +1,28 @@
+{
+  "men": [
+    {
+      "kategori": "Men",
+      "nama": "Superstar Shoes",
+      "harga": "Rp. 2.000.000",
+      "gambar": "1.png"
+    },
+    {
+      "kategori": "Men",
+      "nama": "Dame 6 Geek Up Shoes",
+      "harga": "Rp. 900.000",
+      "gambar": "2.png"
+    },
+    {
+      "kategori": "Men",
+      "harga": "Rp 1.200.000",
+      "nama": "Ultraboost Shoes",
+      "gambar": "3.png"
+    },
+    {
+      "kategori": "Men",
+      "harga": "Rp. 800.000",
+      "nama": "Ginko Shoes",
+      "gambar": "4.png"
+    }
+  ]
+}

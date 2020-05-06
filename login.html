@@ -1,0 +1,253 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>DALAN - Shoes eCommerce</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="assets/img/icon.png">
+
+    <!-- ************************* CSS Files ************************* -->
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="assets/css/vendor.css">
+
+    <!-- style css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/dani.css">
+</head>
+
+<body>
+    <!-- Main Wrapper Start -->
+    <div class="wrapper">
+        <!-- Header Start -->
+        <header class="header">
+            <div class="header__inner fixed-header">
+                <div class="header__main">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="header__main-inner">
+                                    <div class="header__main-left">
+                                        <div class="logo">
+                                            <a href="index.html" class="logo--normal">
+                                                <img src="assets/img/logo/logo.png" alt="Logo">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="header__main-center">
+                                        <nav class="main-navigation text-center d-none d-lg-block">
+                                            <ul class="mainmenu">
+                                                <li class="mainmenu__item">
+                                                    <a href="index.html" class="mainmenu__link">
+                                                        <span class="mm-text">Home</span>
+                                                    </a>
+
+                                                </li>
+                                                <li class="mainmenu__item">
+                                                    <a href="shop.html" class="mainmenu__link">
+                                                        <span class="mm-text">Shop</span>
+                                                    </a>
+
+                                                </li>
+                                                <li class="mainmenu__item">
+                                                    <a href="contactus.html" class="mainmenu__link">
+                                                        <span class="mm-text">Contact Us</span>
+                                                    </a>
+                                                </li>
+                                                <li class="mainmenu__item">
+                                                    <a href="login.html" class="mainmenu__link">
+                                                        <span class="mm-text">Login</span>
+                                                    </a>
+                                                </li>
+                                                <li class="mainmenu__item">
+                                                    <a href="register.html" class="mainmenu__link">
+                                                        <span class="mm-text">Register</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div class="header__main-right">
+                                        <div class="header-toolbar-wrap">
+                                            <div class="header-toolbar">
+                                                <div class="header-toolbar__item header-toolbar--minicart-dani">
+                                                    <a href="cart.html" class="header-toolbar__btn toolbar-btndani">
+                                                        <i class="la la-shopping-cart"></i>
+                                                        <span id="logocartnambah">0</span>
+                                                    </a>
+                                                </div>
+                                                <div class="header-toolbar__item d-block d-lg-none">
+                                                    <a href="#offcanvasMenu"
+                                                        class="header-toolbar__btn toolbar-btn menu-btn">
+                                                        <div class="hamburger-icon">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header End -->
+
+        <!-- Breadcrumb area Start -->
+        <section class="page-title-area bg-image ptb--80" data-bg-image="assets/img/bg/banner.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="page-title">Login</h1>
+                        <ul class="breadcrumb">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="current"><span>Login </span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Breadcrumb area End -->
+
+        <!-- Main Content Wrapper Start -->
+        <div class="main-content-wrapper">
+            <div class="page-content-inner pt--75 pb--80">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 mb-sm--50">
+                            <div class="login-box">
+                                <h3 class="heading__tertiary mb--30">Login</h3>
+                                <form ng-app="myApp" ng-controller="validateApp" name="loginForm"
+                                    class="form form--login" novalidate>
+                                    <div class="form__group mb--20">
+
+                                        <label class="form__label" for="username_email">Username or email address <span
+                                                class="required">*</span></label>
+                                        <input type="email" class="form__input" id="username_email"
+                                            name="username_email" ng-model="login.username_email" ng-required="true">
+                                        <span class="waw"
+                                            ng-show="loginForm.username_email.$touched && loginForm.username_email.$error.email">Please
+                                            enter valid email.</span><br /><br />
+                                    </div>
+                                    <div class="form__group mb--20">
+                                        <label class="form__label" for="login_password">Password <span
+                                                class="required">*</span></label>
+                                        <input required type="password" class="form__input" id="login_password"
+                                            name="login_password" ng-model="login.login_password" ng-required="true">
+                                    </div>
+                                    <div class="d-flex align-items-center mb--20">
+                                        <div class="form__group mr--30">
+                                            <input type="button" name="login" id="login" value="Log in"
+                                                class="btn btn-size-sm">
+                                        </div>
+                                        <div class="form__group">
+                                            <label class="form__label checkbox-label" for="store_session">
+                                                <input type="checkbox" name="store_session" id="store_session">
+                                                <span>Remember me</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <a class="forgot-pass" href="#">Lost your password?</a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Content Wrapper Start -->
+
+        <!-- Footer Start-->
+        <footer class="footer bg-color" data-bg-color="#f4f8fa">
+
+            <div class="footer-bottom">
+                <div class="container-fluid">
+                    <div class="row border-top ptb--20">
+                        <div class="col-12 text-center">
+                            <p class="copyright-text">DALAN &copy; 2020 made with love ❤</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="global-overlay"></div>
+        <!-- Global Overlay End -->
+        <div class="offcanvas-menu-wrapper" id="offcanvasMenu">
+            <div class="offcanvas-menu-inner">
+                <a href="" class="btn-close">
+                    <i class="la la-remove"></i>
+                </a>
+                <nav class="offcanvas-navigation">
+                    <ul class="offcanvas-menu">
+                        <li>
+                            <a href="index.html" class="mainmenu__link">
+                                <span class="mm-text">Home</span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="shop.html" class="mainmenu__link">
+                                <span class="mm-text">Shop</span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="contactus.html" class="mainmenu__link">
+                                <span class="mm-text">Contact Us</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="login.html" class="mainmenu__link">
+                                <span class="mm-text">Login</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="register.html" class="mainmenu__link">
+                                <span class="mm-text">Register</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- Global Overlay Start -->
+        <a class="scroll-to-top" href=""><i class="la la-angle-double-up"></i></a>
+        <!-- Global Overlay End -->
+    </div>
+    <!-- Main Wrapper End -->
+
+
+    <!-- ************************* JS Files ************************* -->
+
+    <!-- jQuery JS -->
+    <script src="assets/js/vendor.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/login.js"></script>
+    <script src="assets/js/register.js"></script>
+    <script src="assets/js/angular.js"></script>
+    <script src="assets/js/angular.min.js"></script>
+
+    <script>
+        var app = angular.module("myApp", []);
+        app.controller("validateApp", function ($scope) { });
+    </script>
+</body>
+
+</html>

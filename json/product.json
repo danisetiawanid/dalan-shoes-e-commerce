@@ -1,0 +1,28 @@
+{
+  "produk": [
+    {
+      "kategori": "Men",
+      "nama": "Ultraboost Shoes",
+      "harga": "Rp 1.200.000",
+      "gambar": "men3.png"
+    },
+    {
+      "kategori": "Kids",
+      "nama": "Nite Jogger Shoes",
+      "harga": "Rp. 600.000",
+      "gambar": "kids4.png"
+    },
+    {
+      "kategori": "Women",
+      "harga": "Rp. 2.000.000",
+      "nama": "Superstar Shoes",
+      "gambar": "women3.png"
+    },
+    {
+      "kategori": "Men",
+      "harga": "Rp. 800.000",
+      "nama": "Ginko Shoes",
+      "gambar": "men4.png"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "women": [
+    {
+      "kategori": "Women",
+      "nama": "Falcon Shoes",
+      "harga": "Rp. 2.000.000",
+      "gambar": "1.png"
+    },
+    {
+      "kategori": "Women",
+      "nama": "SL20 SUMMER RDY Shoes",
+      "harga": "Rp. 1.800.000",
+      "gambar": "2.png"
+    },
+    {
+      "kategori": "Women",
+      "harga": "Rp. 800.000",
+      "nama": "Fluidflow Shoes",
+      "gambar": "3.png"
+    },
+    {
+      "kategori": "Women",
+      "harga": "Rp. 1.400.000",
+      "nama": "Luxury Shoes",
+      "gambar": "4.png"
+    }
+  ]
+}

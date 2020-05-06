@@ -1,0 +1,442 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>DALAN - Shoes eCommerce</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="assets/img/icon.png">
+
+    <!-- ************************* CSS Files ************************* -->
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="assets/css/vendor.css">
+    <link rel="stylesheet" href="assets/css/dani.css">
+
+    <!-- style css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+
+
+    <!-- Main Wrapper Start -->
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__inner fixed-header">
+                <div class="header__main">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="header__main-inner">
+                                    <div class="header__main-left">
+                                        <div class="logo">
+                                            <a href="index.html" class="logo--normal">
+                                                <img src="assets/img/logo/logo.png" alt="Logo">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="header__main-center">
+                                        <nav class="main-navigation text-center d-none d-lg-block">
+                                            <ul class="mainmenu">
+                                                <li class="mainmenu__item">
+                                                    <a href="index.html" class="mainmenu__link">
+                                                        <span class="mm-text">Home</span>
+                                                    </a>
+
+                                                </li>
+                                                <li class="mainmenu__item">
+                                                    <a href="shop.html" class="mainmenu__link">
+                                                        <span class="mm-text">Shop</span>
+                                                    </a>
+
+                                                </li>
+                                                <li class="mainmenu__item">
+                                                    <a href="contactus.html" class="mainmenu__link">
+                                                        <span class="mm-text">Contact Us</span>
+                                                    </a>
+                                                </li>
+                                                <li class="mainmenu__item">
+                                                    <a href="login.html" class="mainmenu__link">
+                                                        <span class="mm-text">Login</span>
+                                                    </a>
+                                                </li>
+                                                <li class="mainmenu__item">
+                                                    <a href="register.html" class="mainmenu__link">
+                                                        <span class="mm-text">Register</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div class="header__main-right">
+                                        <div class="header-toolbar-wrap">
+                                            <div class="header-toolbar">
+                                                <div class="header-toolbar__item header-toolbar--minicart-dani">
+                                                    <a href="cart.html" class="header-toolbar__btn toolbar-btndani">
+                                                        <i class="la la-shopping-cart"></i>
+                                                        <span id="logocartnambah">0</span>
+                                                    </a>
+                                                </div>
+                                                <div class="header-toolbar__item d-block d-lg-none">
+                                                    <a href="#offcanvasMenu"
+                                                        class="header-toolbar__btn toolbar-btn menu-btn">
+                                                        <div class="hamburger-icon">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Breadcrumb area Start -->
+        <section class="page-title-area bg-image ptb--80" data-bg-image="assets/img/bg/banner.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="page-title">Checkout</h1>
+                        <ul class="breadcrumb">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="current"><span>Checkout</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Breadcrumb area End -->
+
+        <!-- Main Content Wrapper Start -->
+        <div class="main-content-wrapper">
+            <div class="page-content-inner pt--80 pt-md--60 pb--72 pb-md--60">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Checkout Area Start -->
+                        <div class="col-lg-6">
+                            <div class="checkout-title mt--10">
+                                <h2>Billing Details</h2>
+                            </div>
+                            <div class="checkout-form">
+                                <form name="checkForm" ng-app="myApp" np-controller="validateApp"
+                                    class="form form--checkout" novalidate>
+                                    <div class="form-row mb--20">
+                                        <div class="form__group col-md-6 mb-sm--30">
+                                            <label for="billing_fname" class="form__label">First Name <span
+                                                    class="required">*</span></label>
+                                            <input ng-model="checkout.name" ng-required="true" type="text"
+                                                name="billing_fname" id="billing_fname" class="form__input">
+                                            <span class="waw"
+                                                ng-show="checkForm.billing_fname.$touched && checkForm.billing_fname.$error.required">Please
+                                                enter first name.</span><br /><br />
+                                        </div>
+                                        <div class="form__group col-md-6">
+                                            <label for="billing_lname" class="form__label">Last Name <span
+                                                    class="required">*</span></label>
+                                            <input ng-required="true" ng-model="checkout.name1" type="text"
+                                                name="billing_lname" id="billing_lname" class="form__input">
+                                            <span class="waw"
+                                                ng-show="checkForm.billing_lname.$touched && checkForm.billing_lname.$error.required">Please
+                                                enter last name.</span><br /><br />
+                                        </div>
+                                    </div>
+                                    <div class="form-row mb--20">
+                                        <div class="form__group col-12">
+                                            <label for="billing_company" class="form__label">Company Name
+                                                (Optional)</label>
+                                            <input type="text" name="billing_company" id="billing_company"
+                                                class="form__input">
+                                        </div>
+                                    </div>
+                                    <div class="form-row mb--20">
+                                        <div class="form__group col-12">
+                                            <label for="billing_country" class="form__label">Country <span
+                                                    class="required">*</span></label>
+                                            <select id="billing_country" name="billing_country"
+                                                class="form__input nice-select">
+                                                <option value="">Select a country…</option>
+                                                <option value="AF">Afghanistan</option>
+                                                <option value="AL">Albania</option>
+                                                <option value="DZ">Algeria</option>
+                                                <option value="AR">Argentina</option>
+                                                <option value="AM">Armenia</option>
+                                                <option value="AU">Australia</option>
+                                                <option value="AT">Austria</option>
+                                                <option value="AZ">Azerbaijan</option>
+                                                <option value="BH">Bahrain</option>
+                                                <option value="BD">Bangladesh</option>
+                                                <option value="BD">Brazil</option>
+                                                <option value="CN">China</option>
+                                                <option value="EG">Egypt</option>
+                                                <option value="FR">France</option>
+                                                <option value="DE">Germany</option>
+                                                <option value="HK">Hong Kong</option>
+                                                <option value="HU">Hungary</option>
+                                                <option value="IS">Iceland</option>
+                                                <option value="IN">India</option>
+                                                <option value="ID" selected="selected">Indonesia</option>
+                                                <option value="IR">Iran</option>
+                                                <option value="IQ">Iraq</option>
+                                                <option value="IE">Ireland</option>
+                                                <option value="IT">Italy</option>
+                                                <option value="JP">Japan</option>
+                                                <option value="KW">Kuwait</option>
+                                                <option value="MY">Malaysia</option>
+                                                <option value="MV">Maldives</option>
+                                                <option value="MX">Mexico</option>
+                                                <option value="MC">Monaco</option>
+                                                <option value="NP">Nepal</option>
+                                                <option value="RU">Russia</option>
+                                                <option value="KR">South Korea</option>
+                                                <option value="SS">South Sudan</option>
+                                                <option value="ES">Spain</option>
+                                                <option value="LK">Sri Lanka</option>
+                                                <option value="SD">Sudan</option>
+                                                <option value="SZ">Swaziland</option>
+                                                <option value="SE">Sweden</option>
+                                                <option value="CH">Switzerland</option>
+                                                <option value="TN">Tunisia</option>
+                                                <option value="TR">Turkey</option>
+                                                <option value="UA">Ukraine</option>
+                                                <option value="AE">United Arab Emirates</option>
+                                                <option value="GB">United Kingdom (UK)</option>
+                                                <option value="US">United States (US)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-row mb--20">
+                                        <div class="form__group col-12">
+                                            <label for="billing_streetAddress" class="form__label">Street Address <span
+                                                    class="required">*</span></label>
+
+                                            <input ng-required="true" ng-model="checkout.address" type="text"
+                                                name="billing_streetAddress" id="billing_streetAddress"
+                                                class="form__input mb--30" placeholder="House number and street name">
+                                            <span class="waw"
+                                                ng-show="checkForm.billing_streetAddress.$touched && checkForm.billing_streetAddress.$error.required">Please
+                                                enter address</span><br /><br />
+                                            <input type="text" name="billing_apartment" id="billing_apartment"
+                                                class="form__input"
+                                                placeholder="Apartment, suite, unit etc. (optional)">
+                                        </div>
+                                    </div>
+                                    <div class="form-row mb--20">
+                                        <div class="form__group col-12">
+                                            <label for="billing_city" class="form__label">Town / City <span
+                                                    class="required">*</span></label>
+                                            <input ng-required="true" ng-model="checkout.city" type="text"
+                                                name="billing_city" id="billing_city" class="form__input">
+                                            <span class="waw"
+                                                ng-show="checkForm.billing_city.$touched && checkForm.billing_city.$error.required">Please
+                                                enter City</span><br /><br />
+                                        </div>
+                                    </div>
+                                    <div class="form-row mb--20">
+                                        <div class="form__group col-12">
+                                            <label for="billing_state" class="form__label">State / County <span
+                                                    class="required">*</span></label>
+                                            <input ng-required="true" ng-model="checkout.state" type="text"
+                                                name="billing_state" id="billing_state" class="form__input">
+                                            <span class="waw"
+                                                ng-show="checkForm.billing_state.$touched && checkForm.billing_state.$error.required">Please
+                                                enter State / County</span><br /><br />
+                                        </div>
+                                    </div>
+                                    <div class="form-row mb--20">
+                                        <div class="form__group col-12">
+                                            <label for="billing_phone" class="form__label">Phone <span
+                                                    class="required">*</span></label>
+                                            <input ng-required="true" ng-model="checkout.number" type="text"
+                                                name="billing_phone" id="billing_phone" class="form__input">
+                                            <span class="waw"
+                                                ng-show="checkForm.billing_phone.$touched && checkForm.billing_phone.$error.required">Please
+                                                enter Phone Number</span><br /><br />
+                                        </div>
+                                    </div>
+                                    <div class="form-row mb--20">
+                                        <div class="form__group col-12">
+                                            <label for="billing_email" class="form__label">Email Address <span
+                                                    class="required">*</span></label>
+                                            <input ng-required="true" ng-model="checkout.email" type="email"
+                                                name="billing_email" id="billing_email" class="form__input">
+                                            <span class="waw"
+                                                ng-show="checkForm.billing_email.$touched && checkForm.billing_email.$error.email">Please
+                                                enter valid Email</span><br /><br />
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form__group col-12">
+                                            <label for="orderNotes" class="form__label">Order Notes</label>
+                                            <textarea class="form__input form__input--textarea" id="orderNotes"
+                                                name="orderNotes"
+                                                placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 offset-xl-1 col-lg-6 mt-md--40">
+                            <div class="order-details">
+                                <div class="checkout-title mt--10">
+                                    <h2>Your Order</h2>
+                                </div>
+                                <div class="checkout-payment">
+                                    <form class="payment-form">
+                                        <div class="payment-group mb--10">
+                                            <div class="payment-radio">
+                                                <input type="radio" value="bank" name="payment-method" id="bank"
+                                                    checked>
+                                                <label class="payment-label" for="bank">Direct Bank Transfer</label>
+                                            </div>
+                                            <div class="payment-info" data-method="bank">
+                                                <p>Make your payment directly into our bank account. Please use your
+                                                    Order ID as the payment reference. Your order will not be shipped
+                                                    until the funds have cleared in our account.</p>
+                                            </div>
+                                        </div>
+                                        <div class="payment-group mb--10">
+                                            <div class="payment-radio">
+                                                <input type="radio" value="cheque" name="payment-method" id="cheque">
+                                                <label class="payment-label" for="cheque">
+                                                    cheque payments
+                                                </label>
+                                            </div>
+                                            <div class="payment-info cheque hide-in-default" data-method="cheque">
+                                                <p>Please send a check to Store Name, Store Street, Store Town, Store
+                                                    State / County, Store Postcode.</p>
+                                            </div>
+                                        </div>
+                                        <div class="payment-group mb--10">
+                                            <div class="payment-radio">
+                                                <input type="radio" value="cash" name="payment-method" id="cash">
+                                                <label class="payment-label" for="cash">
+                                                    CASH ON DELIVERY
+                                                </label>
+                                            </div>
+                                            <div class="payment-info cash hide-in-default" data-method="cash">
+                                                <p>Pay with cash upon delivery.</p>
+                                            </div>
+                                        </div>
+                                        <div class="payment-group mt--20">
+                                            <p class="mb--15">Your personal data will be used to process your order,
+                                                support your experience throughout this website, and for other purposes
+                                                described in our privacy policy.</p>
+                                            <button type="submit" class="btn btn-size-md btn-fullwidth"
+                                                onclick="removeProductSemua();">Place
+                                                Order</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Checkout Area End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Content Wrapper Start -->
+
+        <!-- Footer Start-->
+        <footer class="footer bg-color" data-bg-color="#f4f8fa">
+            <div class="footer-bottom">
+                <div class="container-fluid">
+                    <div class="row border-top ptb--20">
+                        <div class="col-12 text-center">
+                            <p class="copyright-text">DALAN &copy; 2020 made with love ❤</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End-->
+
+        <div class="offcanvas-menu-wrapper" id="offcanvasMenu">
+            <div class="offcanvas-menu-inner">
+                <a href="" class="btn-close">
+                    <i class="la la-remove"></i>
+                </a>
+                <nav class="offcanvas-navigation">
+                    <ul class="offcanvas-menu">
+                        <li>
+                            <a href="index.html" class="mainmenu__link">
+                                <span class="mm-text">Home</span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="shop.html" class="mainmenu__link">
+                                <span class="mm-text">Shop</span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="contactus.html" class="mainmenu__link">
+                                <span class="mm-text">Contact Us</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="login.html" class="mainmenu__link">
+                                <span class="mm-text">Login</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="register.html" class="mainmenu__link">
+                                <span class="mm-text">Register</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+
+        <!-- Global Overlay Start -->
+        <div class="global-overlay"></div>
+        <!-- Global Overlay End -->
+
+        <!-- Global Overlay Start -->
+        <a class="scroll-to-top" href=""><i class="la la-angle-double-up"></i></a>
+        <!-- Global Overlay End -->
+    </div>
+    <!-- Main Wrapper End -->
+
+
+    <!-- ************************* JS Files ************************* -->
+
+    <!-- jQuery JS -->
+    <script src="assets/js/vendor.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/dani.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/angular.js"></script>
+    <script src="assets/js/angular.min.js"></script>
+    <script>
+        var app = angular.module("myApp", []);
+        app.controller("validateApp", function ($scope) { });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+{
+  "kids": [
+    {
+      "kategori": "Kids",
+      "nama": "Superstar Shoes",
+      "harga": "Rp.1.400.000",
+      "gambar": "1.png"
+    },
+    {
+      "kategori": "Kids",
+      "nama": "Stan Smith Shoes",
+      "harga": "Rp. 700.000",
+      "gambar": "2.png"
+    },
+    {
+      "kategori": "Kids",
+      "harga": "Rp. 1.200.000",
+      "nama": "OZWEEGO Shoes",
+      "gambar": "3.png"
+    },
+    {
+      "kategori": "Kids",
+      "harga": "Rp. 600.000",
+      "nama": "Nite Jogger Shoes",
+      "gambar": "4.png"
+    }
+  ]
+}

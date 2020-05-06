@@ -1,0 +1,46 @@
+.navbar-brand {
+  font-weight: bold;
+  font-size: 40px;
+}
+.nav-item {
+  font-weight: 550;
+}
+
+span.waw {
+  color: red;
+}
+.header-toolbar--minicart-dani .toolbar-btndani {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+}
+.header-toolbar--minicart-dani .toolbar-btndani span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  line-height: 23px;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  font-size: 12px;
+  border: 1px solid #e5e5e5;
+  margin-left: 12px;
+}
+@media (max-width: 35.94em) {
+  .header-toolbar--minicart-dani .toolbar-btndani span {
+    margin-left: 5px;
+  }
+}
+.header-toolbar--minicart-dani .toolbar-btndani span:hover {
+  border-color: #ff5151;
+}

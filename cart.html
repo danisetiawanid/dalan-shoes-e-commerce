@@ -1,0 +1,261 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>DALAN - Shoes eCommerce</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="assets/img/icon.png">
+
+    <!-- ************************* CSS Files ************************* -->
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="assets/css/vendor.css">
+
+    <!-- style css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/dani.css">
+</head>
+
+<body>
+
+
+    <!-- Main Wrapper Start -->
+    <div class="wrapper">
+        <!-- Header Start -->
+        <header class="header">
+            <div class="header__inner fixed-header">
+                <div class="header__main">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="header__main-inner">
+                                    <div class="header__main-left">
+                                        <div class="logo">
+                                            <a href="index.html" class="logo--normal">
+                                                <img src="assets/img/logo/logo.png" alt="Logo">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="header__main-center">
+                                        <nav class="main-navigation text-center d-none d-lg-block">
+                                            <ul class="mainmenu">
+                                                <li class="mainmenu__item">
+                                                    <a href="index.html" class="mainmenu__link">
+                                                        <span class="mm-text">Home</span>
+                                                    </a>
+
+                                                </li>
+                                                <li class="mainmenu__item">
+                                                    <a href="shop.html" class="mainmenu__link">
+                                                        <span class="mm-text">Shop</span>
+                                                    </a>
+
+                                                </li>
+                                                <li class="mainmenu__item">
+                                                    <a href="contactus.html" class="mainmenu__link">
+                                                        <span class="mm-text">Contact Us</span>
+                                                    </a>
+                                                </li>
+                                                <li class="mainmenu__item">
+                                                    <a href="login.html" class="mainmenu__link">
+                                                        <span class="mm-text">Login</span>
+                                                    </a>
+                                                </li>
+                                                <li class="mainmenu__item">
+                                                    <a href="register.html" class="mainmenu__link">
+                                                        <span class="mm-text">Register</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div class="header__main-right">
+                                        <div class="header-toolbar-wrap">
+                                            <div class="header-toolbar">
+                                                <div class="header-toolbar__item header-toolbar--minicart-dani">
+                                                    <a href="cart.html" class="header-toolbar__btn toolbar-btndani">
+                                                        <i class="la la-shopping-cart"></i>
+                                                        <span id="logocartnambah">0</span>
+                                                    </a>
+                                                </div>
+                                                <div class="header-toolbar__item d-block d-lg-none">
+                                                    <a href="#offcanvasMenu"
+                                                        class="header-toolbar__btn toolbar-btn menu-btn">
+                                                        <div class="hamburger-icon">
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header End -->
+
+        <!-- Breadcrumb area Start -->
+        <section class="page-title-area bg-image ptb--80" data-bg-image="assets/img/bg/banner.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="page-title">Cart</h1>
+                        <ul class="breadcrumb">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="current"><span>Cart</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Breadcrumb area End -->
+
+        <!-- Main Content Wrapper Start -->
+        <div class="main-content-wrapper">
+            <div class="page-content-inner ptb--80 pt-md--40 pb-md--60">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mb-md--50">
+                            <form class="cart-form" action="#">
+                                <div class="row no-gutters">
+                                    <div class="col-12">
+                                        <div class="table-content table-responsive">
+                                            <table class="table text-center">
+                                                <thead>
+                                                    <tr>
+                                                        <th>&nbsp;</th>
+                                                        <th>&nbsp;</th>
+                                                        <th class="text-left">Product</th>
+                                                        <th>price</th>
+                                                        <th>quantity</th>
+                                                        <th>total</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="tbodydani">
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="cart-collaterals">
+                                <!-- <div class="cart-totals">
+                                    <h5 class="font-size-14 font-bold mb--15">Cart totals</h5>
+                                    <div class="cart-calculator">
+                                        <div class="cart-calculator__item order-total">
+                                            <div class="cart-calculator__item--head">
+                                                <span>Total</span>
+                                            </div>
+                                            <div class="cart-calculator__item--value">
+                                                <span class="product-price-wrapper">
+                                                    <span class="money">$226.00</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="checkout.html" class="btn btn-size-md btn-shape-square btn-fullwidth">
+                                    Proceed To Checkout
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Content Wrapper Start -->
+
+        <!-- Footer Start-->
+        <footer class="footer bg-color" data-bg-color="#f4f8fa">
+            <div class="footer-bottom">
+                <div class="container-fluid">
+                    <div class="row border-top ptb--20">
+                        <div class="col-12 text-center">
+                            <p class="copyright-text">DALAN &copy; 2020 made with love ❤</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End-->
+
+        <!-- OffCanvas Menu Start -->
+        <div class="offcanvas-menu-wrapper" id="offcanvasMenu">
+            <div class="offcanvas-menu-inner">
+                <a href="" class="btn-close">
+                    <i class="la la-remove"></i>
+                </a>
+                <nav class="offcanvas-navigation">
+                    <ul class="offcanvas-menu">
+                        <li>
+                            <a href="index.html" class="mainmenu__link">
+                                <span class="mm-text">Home</span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="shop.html" class="mainmenu__link">
+                                <span class="mm-text">Shop</span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="contactus.html" class="mainmenu__link">
+                                <span class="mm-text">Contact Us</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="login.html" class="mainmenu__link">
+                                <span class="mm-text">Login</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="register.html" class="mainmenu__link">
+                                <span class="mm-text">Register</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- OffCanvas Menu End -->
+
+
+        <!-- Global Overlay Start -->
+        <div class="global-overlay"></div>
+        <!-- Global Overlay End -->
+
+        <!-- Global Overlay Start -->
+        <a class="scroll-to-top" href=""><i class="la la-angle-double-up"></i></a>
+        <!-- Global Overlay End -->
+    </div>
+    <!-- Main Wrapper End -->
+
+
+    <!-- ************************* JS Files ************************* -->
+
+    <!-- jQuery JS -->
+    <script src="assets/js/vendor.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/cart.js"></script>
+</body>
+
+</html>
