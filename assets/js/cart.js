@@ -20,7 +20,7 @@ let product = [
         inCart: 0
     },
     {
-        name: 'Genko Shoes',
+        name: 'Ginko Shoes',
         tag: '4',
         price: 800000,
         inCart: 0
